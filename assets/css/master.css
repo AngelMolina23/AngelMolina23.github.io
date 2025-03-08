@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 header{
-    background-color: burlywood;
+    background-color: rgb(234, 223, 209);
     color: black;
     padding: 10px 20px;
     text-align: center;
@@ -38,7 +38,7 @@ section{
 section article, aside{
     margin-bottom: 15px;
     padding: 15px;
-    background-color: burlywood;
+    background-color: rgb(219, 206, 189);
     border: 1px solid red;
 }
 footer{
