@@ -1,58 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>AngelYMD/yael</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina personal de AngelYMD">
-    <meta name="Keywords" content="UNAM, FES, ARAGON, lamejor, ICO, Computacion">
-    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/master.css">
-    <script src="./assets/js/cliente.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/estilo.css">
+  <title>Portafolio - [Angel Molina]</title>
 </head>
 <body>
-    <header>
-        <h1>Angel Yael Molina Diaz</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.unam.mx" target="_blank">UNAM</a></li>
-                <li><a href="https://www.aragon.unam.mx" target="_blank">FES Aragón</a></li>
-                <li><a href="https://github.com/AngelMolina23/AngelMolina23.github.io" target="_blank">Mi GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1 id="texto-header"></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#education">Educación</a></li>
+        <li><a href="#certifications">Certificados</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Sección 1: Información relacionada con estudios -->
-        <section>
-            <article>
-                <h2>Mis Estudios</h2>
-                <p>Actualmente soy estudiante en la FES Aragón, donde curso la carrera de Ingeniería en Computación. He completado varios cursos sobre programación, bases de datos y actualmente diseño web.</p>
-            </article>
-        </section>
+  <main>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="about-contenido">
+          <img src="./assets/img/profile.png" alt="Foto de perfil" class="foto-about" />
+          <p class="texto-about">¡Hola! Soy Angel Molina apasionado por la resolución de problemas mediante la programación. Me interesa profundamente el campo del cómputo en la nube, software y la ciberseguridad. En mis tiempos libres, disfruto leer libros sobre el comportamiento humano y hechos científicos. 
+            Mi enfoque hacia las tareas que realizo es siempre muy dedicado, lo que me permite ser eficiente en mi trabajo. 
+            Además, tengo un gran interés por las nuevas tecnologías, particularmente en el mundo de los videojuegos, y me gusta mantenerme actualizado sobre las últimas tendencias. 
+            Mi deporte favorito es el fútbol, lo que también me ha enseñado la importancia del trabajo en equipo y la disciplina.
+          </p>
+        </div>
+    </section>
 
-        <!-- Sección 2: Tecnologías conocidas y nivel de dominio -->
-        <section>
-            <article>
-                <h2>Tecnologías y Nivel de Dominio</h2>
-                <ul>
-                    <li>HTML y CSS - BASICO</li>
-                    <li>JavaScript - BASICO</li>
-                    <li>Python - BASICO</li>
-                    <li>Java - Intermedio</li>
-                    <li>SQL - Intermedio</li>
-                </ul>
-            </article>
-        </section>
+    <section id="education">
+      <h2>Educación</h2>
+      <ul>
+        <li>Ingenieria en Computacion - Universidad Nacional Autonoma de Mexico (2023-actualmente)</li>
+      </ul>
+    </section>
 
-        <!-- Sección 3: Información adicional -->
-        <section>
-            <article>
-                <h2>Información Adicional</h2>
-                <p>Mis pasatiempos incluyen jugar futbol, jugar videojuegos, lecturas y escuchar musica.</p>
-            </article>
-        </section>
-    </main>
+    <section id="certifications">
+      <h2>Certificados</h2>
+      <ul class="lista-con-imagen">
+        <li> Python Open Academy - 2025</li>
+        <li>Introducción a las Tecnologías Emergentes Open Academy - 2024</li>
+        <li>Database Foundations Oracle - 2024</li>
+        <li>Java Fundamentals Oracle - 2023</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <h4>Tecnologías y Herramientas con las que trabajo:</h4>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+          <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline-item"><i class="fab fa-java"></i></li>
+          <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+          <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+          <li class="list-inline-item"><i class="fab fa-github"></i></li>
+        </ul>
+        <h4>Habilidades Blandas</h4>
+        <ul class="ul-habilidades">
+            <li>Aprendizaje Continuo</li>
+            <li>Capacidad de Adaptarme</li>
+            <li>Resolucion de Problemas</li>
+            <li>Metodologia de trabajo Agil, SCRUM</li>
+        </ul>
+    </section>
+    <!--
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <ul>
+        <li><strong>Proyecto 1:</strong> Descripción breve...</li>
+        <li><strong>Proyecto 2:</strong> Descripción breve...</li>
+        <li><strong>Proyecto 3:</strong> Descripción breve...</li>
+      </ul>
+    </section>
+    -->
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p class="letra-contacto">Puedes escribirme a: <a href="mailto:tuemail@ejemplo.com">yael23molina@gmail.com</a></p>
+      <p class="letra-contacto">Numero de telefono: (+52) 56-5232-0581</p>
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.linkedin.com/in/angel-yael-molina-diaz-a3190b335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcmNqpZUSSwSFEhbLqVDhIQ%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="social-icon" href="https://www.facebook.com/angel.moliba"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Angel Yael Molina Diaz. Todos los derechos reservados.</p>
+  </footer>
+  <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
