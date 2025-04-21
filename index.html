@@ -10,8 +10,16 @@
 <body>
   <header>
     <h1 id="texto-header"></h1>
-    <nav>
-      <ul>
+    <nav class="navbar">
+      <div class="logo"></div>
+
+       <!-- Botón hamburguesa -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#education">Educación</a></li>
         <li><a href="#certifications">Certificados</a></li>
