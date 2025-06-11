@@ -8,8 +8,8 @@ const frases = [
   let j = 0;
   let escribiendo = true;
 
-  const velocidad = 150;
-  const espera = 2500;
+  const velocidad = 100;
+  const espera = 2000;
   const h1 = document.getElementById("texto-header");
 
   function escribirTexto() {
@@ -40,4 +40,14 @@ const frases = [
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.classList.toggle('active');
+  }
+function copiarCorreo() {
+    const correo = document.getElementById("correo").textContent;
+    const tooltip = document.getElementById("tooltip");
+    navigator.clipboard.writeText(correo).then(() => {
+      tooltip.classList.add("show");
+      setTimeout(() => {
+        tooltip.classList.remove("show");
+      }, 1500);
+    });
   }

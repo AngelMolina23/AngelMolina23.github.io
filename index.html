@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/css/estilo.css">
   <title>Portafolio - [Angel Molina]</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
 </head>
+
 <body>
   <header>
-    <h1 id="texto-header"></h1>
+    <!--<h1 id="texto-header"></h1>-->
     <nav class="navbar">
       <div class="logo"></div>
 
-       <!-- Botón hamburguesa -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#education">Educación</a></li>
@@ -29,18 +32,24 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section id="about">
-        <h2>Sobre mí</h2>
-        <div class="about-contenido">
-          <img src="./assets/img/profile.png" alt="Foto de perfil" class="foto-about" />
-          <p class="texto-about">¡Hola! Soy Angel Molina apasionado por la resolución de problemas mediante la programación. Me interesa profundamente el campo del cómputo en la nube, software y la ciberseguridad. En mis tiempos libres, disfruto leer libros sobre el comportamiento humano y hechos científicos. 
-            Mi enfoque hacia las tareas que realizo es siempre muy dedicado, lo que me permite ser eficiente en mi trabajo. 
-            Además, tengo un gran interés por las nuevas tecnologías, particularmente en el mundo de los videojuegos, y me gusta mantenerme actualizado sobre las últimas tendencias. 
-            Mi deporte favorito es el fútbol, lo que también me ha enseñado la importancia del trabajo en equipo y la disciplina.
-          </p>
-        </div>
+      <h1 id="texto-header"></h1>
+      <div class="about-contenido">
+        <img src="./assets/img/profile.png" alt="Foto de perfil" class="foto-about" />
+        <p class="texto-about">¡Hola! Soy Angel Molina apasionado por la resolución de problemas mediante la
+          programación. Me interesa profundamente el campo del cómputo en la nube, software y la ciberseguridad. En mis
+          tiempos libres, disfruto leer libros sobre el comportamiento humano y hechos científicos. </p>
+        <p class="texto-about">Mi enfoque hacia las tareas que realizo es siempre muy dedicado, lo que me permite ser
+          eficiente en mi trabajo.
+          Además, tengo un gran interés por las nuevas tecnologías, particularmente en el mundo de los videojuegos, y me
+          gusta mantenerme actualizado sobre las últimas tendencias.
+          Mi deporte favorito es el fútbol, lo que también me ha enseñado la importancia del trabajo en equipo y la
+          disciplina.</p>
+      </div>
+      <a href="./assets/donwloads/CV_Molina_Diaz_AngelYael..pdf" download class="btn-descargar">
+        <i class="fas fa-download"></i> Descargar CV
+      </a>
     </section>
 
     <section id="education">
@@ -61,46 +70,52 @@
     </section>
 
     <section id="skills">
-        <h2>Habilidades</h2>
-        <h4>Tecnologías y Herramientas con las que trabajo:</h4>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-          <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-          <li class="list-inline-item"><i class="fab fa-python"></i></li>
-          <li class="list-inline-item"><i class="fab fa-java"></i></li>
-          <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-          <li class="list-inline-item"><i class="fab fa-docker"></i></li>
-          <li class="list-inline-item"><i class="fab fa-github"></i></li>
-        </ul>
-        <h4>Habilidades Blandas</h4>
-        <ul class="ul-habilidades">
-            <li>Aprendizaje Continuo</li>
-            <li>Capacidad de Adaptarme</li>
-            <li>Resolucion de Problemas</li>
-            <li>Metodologia de trabajo Agil, SCRUM</li>
-        </ul>
+      <h2>Habilidades</h2>
+      <h4>Tecnologías y Herramientas con las que trabajo:</h4>
+      <ul class="list-inline dev-icons">
+        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
+        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+      </ul>
+      <h4>Habilidades Blandas</h4>
+      <ul class="ul-habilidades">
+        <li>Aprendizaje Continuo</li>
+        <li>Capacidad de Adaptarme</li>
+        <li>Resolucion de Problemas</li>
+        <li>Metodologia de trabajo Agil, SCRUM</li>
+      </ul>
     </section>
-    <!--
     <section id="projects">
       <h2>Proyectos</h2>
       <ul>
         <li><strong>Proyecto 1:</strong> Descripción breve...</li>
-        <li><strong>Proyecto 2:</strong> Descripción breve...</li>
-        <li><strong>Proyecto 3:</strong> Descripción breve...</li>
       </ul>
     </section>
-    -->
     <section id="contact">
       <h2>Contacto</h2>
-      <p class="letra-contacto">Puedes escribirme a: <a href="mailto:tuemail@ejemplo.com">yael23molina@gmail.com</a></p>
-      <p class="letra-contacto">Numero de telefono: (+52) 56-5232-0581</p>
+      <p class="letra-contacto">
+        Puedes escribirme a:
+        <span class="copy-container">
+          <a href="mailto:yael23molina@gmail.com" id="correo">yael23molina@gmail.com</a>
+          <button class="copy-button" onclick="copiarCorreo()" aria-label="Copiar correo">
+            <i class="fa-solid fa-copy"></i>
+            <span id="tooltip" class="tooltip">Copiado</span>
+          </button>
+        </span>
+      </p>
+      <p class="letra-contacto">Numero de celular: (+52) 56-5232-0581</p>
       <div class="social-icons">
-        <a class="social-icon" href="https://www.linkedin.com/in/angel-yael-molina-diaz-a3190b335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcmNqpZUSSwSFEhbLqVDhIQ%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+        <a class="social-icon"
+          href="https://www.linkedin.com/in/angel-yael-molina-diaz-a3190b335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcmNqpZUSSwSFEhbLqVDhIQ%3D%3D"><i
+            class="fab fa-linkedin-in"></i></a>
         <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-        <a class="social-icon" href="https://www.facebook.com/angel.moliba"><i class="fab fa-facebook-f"></i></a>
-    </div>
+        <a class="social-icon" href="https://wa.me/525652320581"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </section>
   </main>
 
@@ -109,4 +124,5 @@
   </footer>
   <script src="./assets/js/scripts.js"></script>
 </body>
+
 </html>
