@@ -51,3 +51,16 @@ function copiarCorreo() {
       }, 1500);
     });
   }
+   const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  const navLinks = navMenu.querySelectorAll('a');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+    });
+  });
