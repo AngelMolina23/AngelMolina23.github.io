@@ -36,11 +36,19 @@ const frases = [
   }
 
   escribirTexto();
-  
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('active');
-  }
+ function toggleMenu() {
+  const nav = document.getElementById('navLinks');
+  nav.classList.toggle('active');
+
+  // Cierra el menú al hacer clic en cualquier enlace
+  const links = nav.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
+  });
+}
+
 function copiarCorreo() {
     const correo = document.getElementById("correo").textContent;
     const tooltip = document.getElementById("tooltip");
@@ -51,16 +59,3 @@ function copiarCorreo() {
       }, 1500);
     });
   }
-   const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
-  const navLinks = navMenu.querySelectorAll('a');
-
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('show');
-    });
-  });

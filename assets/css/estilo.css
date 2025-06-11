@@ -233,7 +233,7 @@ body {
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: #d20707;
+  background: #000000;
   margin: 4px;
   border-radius: 5px;
 }
@@ -248,7 +248,7 @@ body {
     position: absolute;
     top: 60px;
     right: 0;
-    background: #333333;
+    background: #545454;
     width: 100%;
     flex-direction: column;
     align-items: center;
