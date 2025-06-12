@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="./assets/css/estilo.css">
   <title>Portafolio - [Angel Molina]</title>
   <link rel="icon" type="image/png" href="./assets/img/favicon.png">
@@ -72,14 +73,18 @@
       <h2>Habilidades</h2>
       <h4>Tecnologías y Herramientas con las que trabajo:</h4>
       <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-        <li class="list-inline-item"><i class="fab fa-docker"></i></li>
-        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+          <!-- Devicon (nuevas tecnologías no soportadas por FA) -->
+          <li class="list-inline-item"><i class="devicon-java-plain colored" title="Java"></i></li>
+          <li class="list-inline-item"><i class="devicon-python-plain colored" title="Python"></i></li>
+          <li class="list-inline-item"><i class="devicon-docker-plain colored" title="Docker"></i></li>
+          <li class="list-inline-item"><i class="devicon-git-plain colored" title="Git"></i></li>
+          <li class="list-inline-item"><i class="devicon-mysql-plain colored" title="MySQL"></i></li>
+          <li class="list-inline-item"><i class="devicon-mariadb-plain colored" title="MariaDB"></i></li>
+          <li class="list-inline-item"><i class="devicon-html5-plain colored" title="HTML5"></i></li>
+          <li class="list-inline-item"><i class="devicon-css3-plain colored" title="CSS3"></i></li>
+          <li class="list-inline-item"><i class="devicon-javascript-plain colored" title="JavaScript"></i></li>
+          <li class="list-inline-item"><i class="devicon-nodejs-plain colored" title="Node.js"></i></li>
+          <li class="list-inline-item"><i class="devicon-github-original colored" title="GitHub"></i></li>  
       </ul>
       <h4>Habilidades Blandas</h4>
       <ul class="ul-habilidades">
@@ -89,12 +94,27 @@
         <li>Metodologia de trabajo Agil, SCRUM</li>
       </ul>
     </section>
+
     <section id="projects">
       <h2>Proyectos</h2>
-      <ul>
-        <li><strong>Proyecto 1:</strong> Descripción breve...</li>
-      </ul>
+      <div class="project-gallery">
+        <div class="project-card" onclick="toggleCard(this)">
+          <div class="project-thumbnails">
+            <img src="./assets/img/proyecto1_1.png" alt="Vista 1" onclick="mostrarImagen(this.src)">
+            <img src="./assets/img/proyecto1_2.png" alt="Vista 2" onclick="mostrarImagen(this.src)">
+            <img src="./assets/img/proyecto1_3.png" alt="Vista 3" onclick="mostrarImagen(this.src)">
+          </div>
+          <div class="project-info">
+            <h3>Aplicacion web- Node js</h3>
+            <p>Descripción breve del proyecto en una sola línea.</p>
+            <a href="https://github.com/tuusuario/repositorio" target="_blank" class="btn-github">Ver en GitHub</a>
+          </div>
+        </div>
+
+        <!-- Puedes duplicar este bloque para más proyectos -->
+      </div>
     </section>
+
     <section id="contact">
       <h2>Contacto</h2>
       <p class="letra-contacto">
@@ -122,6 +142,11 @@
     <p>&copy; 2025 Angel Yael Molina Diaz. Todos los derechos reservados.</p>
   </footer>
   <script src="./assets/js/scripts.js"></script>
+  <!-- Contenedor modal -->
+  <div id="lightbox" class="lightbox" onclick="cerrarImagen()">
+    <img id="img-ampliada" src="" alt="Imagen ampliada">
+  </div>
+
 </body>
 
 </html>

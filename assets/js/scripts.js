@@ -1,7 +1,6 @@
 const frases = [
   "Angel Yael Molina Díaz",
   "Desarrollador en formación",
-  "Apasionado por la tecnología"
 ];
 
 let i = 0;
@@ -64,4 +63,19 @@ function copiarCorreo() {
       tooltip.classList.remove("show");
     }, 1500);
   });
+}
+
+function toggleCard(card) {
+  card.classList.toggle("open");
+}
+
+function mostrarImagen(src) {
+  const lightbox = document.getElementById("lightbox");
+  const imgAmpliada = document.getElementById("img-ampliada");
+  imgAmpliada.src = src;
+  lightbox.style.display = "flex";
+}
+
+function cerrarImagen() {
+  document.getElementById("lightbox").style.display = "none";
 }
