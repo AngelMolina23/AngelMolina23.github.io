@@ -316,18 +316,20 @@ body {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .project-card {
+  width: 280px;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: 280px;
   transition: transform 0.3s ease;
   cursor: pointer;
-  position: relative;
 }
+
 
 .project-card:hover {
   transform: scale(1.03);
@@ -350,15 +352,21 @@ body {
 
 .project-info {
   padding: 1rem;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 .project-card.open .project-info {
-  display: flex;
+  max-height: 300px; /* ajusta según tu contenido */
+  opacity: 1;
 }
+
 
 .btn-github {
   margin-top: 10px;
@@ -391,4 +399,19 @@ body {
   max-width: 90%;
   max-height: 80%;
   border-radius: 10px;
+}
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
 }

@@ -66,10 +66,14 @@ function copiarCorreo() {
 }
 
 function toggleCard(card) {
-  card.classList.toggle("open");
+  document.querySelectorAll('.project-card.open')
+    .forEach(c => c !== card && c.classList.remove('open'));
+  card.classList.toggle('open');
 }
 
-function mostrarImagen(src) {
+
+function mostrarImagen(src,event) {
+  event.stopPropagation();
   const lightbox = document.getElementById("lightbox");
   const imgAmpliada = document.getElementById("img-ampliada");
   imgAmpliada.src = src;
